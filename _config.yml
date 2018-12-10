@@ -17,3 +17,5 @@ url: "https://stem-e-portfolio.github.io/LNorman28.Github.io/" # the base hostna
 
 # Build settings
 markdown: kramdown
+
+theme: jekyll-theme-cayman
