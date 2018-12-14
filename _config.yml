@@ -15,7 +15,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://stem-e-portfolio.github.io/LNorman28.Github.io/" # the base hostname & protocol for your site
 
-# Build settings
+# #Build settings
 markdown: kramdown
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-cayman #

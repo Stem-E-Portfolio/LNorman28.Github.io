@@ -1,20 +1,79 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-<div class="home">
+li {
+  float: left;
+}
 
-  <h1 class="page-heading">Posts</h1>
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        
-        <h2>
-         
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+.active {
+  background-color: #4CAF50;
+}
+.button {
+  background-color: #FFFFF;
+  border: none;
+  color: orange;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
-</div>
+
+</style>
+<head>
+<meta charset="utf-8">
+ <link rel="stylesheet" href="main.css">
+ <link rel="stylesheet" href="main.scss">
+ <link rel="php" href"Hello.php">
+<title>Title of the document</title>
+<ul>
+  <li style="float:right"><a href="index.html"style="color:lime">Home</a></li>
+  <li><a href="Stuff.html">Tech</a></li>
+</ul>
+<button style="float:center" class="button"onclick="random_bg_color()">Click me</button><br>
+<script>
+function random_bg_color() {
+    var x = Math.floor(Math.random() * 256);
+    var y = Math.floor(Math.random() * 256);
+    var z = Math.floor(Math.random() * 256);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+ console.log(bgColor);
+  
+    document.body.style.background = bgColor;
+    }
+
+random_bg_color();
+</script>
+</head>
+<h1>
+<body>
+The <abbr title="Are you not entertained">content</abbr> of the document
+</h1>
+<?php echo '<p>Hello World</p>
+</body>
+
+</html>
